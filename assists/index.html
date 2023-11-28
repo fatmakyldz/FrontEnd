@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Html5, css3, js, jquery, bootstrap, reactJS">
+    <meta name="author" content="Fatma Akyıldız">
+    <title>Document</title>
+
+    <!-- <style>
+       /* INTERNAL CSS*/
+       /* p{
+        /*color: blue !important; bu olduğunda hepsinin önüne geçer  */
+    </style> -->
+
+    <link rel="stylesheet" href="style.css" class="CSS">
+    
+</head>
+<body>
+    
+
+<pre>
+   <!--CSS-->
+   <header id="header_id" class="header_class"></header>
+   <main></main>
+   
+
+    <ul id="nevbar_id">
+        <li>Anasayfa</li>
+        <li>Hakkımızda</li>
+        <li>İletişim</li>
+        <li>Kayıt Ol </li>
+    </ul>
+    <br><br><br><br>
+
+
+    <div class="div_class">1. kutu </div>
+    <div class="div_class">2. kutu</div>
+    <div class="div_class">3. kutu</div>
+    <div class="div_class">4. kutu</div>
+
+
+
+
+    <!-- inline CSS > external CSS > Internal CSS-->
+    <!--<p style="color:blueviolet;">Merhabalar güzel insanlar</p>-->
+    <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Vel architecto harum consectetur aliquid numquam iste 
+id beatae praesentium saepe, exercitationem sit cumque 
+et earum porro ullam rem minima! Non, modi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Vel architecto harum consectetur aliquid numquam iste 
+id beatae praesentium saepe, exercitationem sit cumque 
+et earum porro ullam rem minima! Non, modi
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Vel architecto harum consectetur aliquid numquam iste 
+id beatae praesentium saepe, exercitationem sit cumque 
+et earum porro ullam rem minima! Non, modi
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Vel architecto harum consectetur aliquid numquam iste 
+id beatae praesentium saepe, exercitationem sit cumque 
+et earum porro ullam rem minima! Non, modi</p>
+    
+
+
+
+
+    <hr>
+    <br>
+    <br>
+      <!-- START CODE -->
+    <p>-----Form------</p>
+    <form action="contact.html" method="post"> 
+    <!-- table tablo yapmak için kullanılır tbody tablonun içi tr satırlar ve td sütünlardıe-->
+
+    <table  width:100%>
+        <tbody>
+            <tr>
+                <td><label for="p_Username">Username</label></td>
+                <td><input type="text" name="p_username" id="p_username" repuired placeholder="Adınızı yazınız..." ></td>
+            </tr>
+
+            <tr>
+                <td><label for="p_email">email</label></td>
+                <td><input type="text" name="p_email" id="p_email" repuired placeholder="Email yazınız..." ></td>
+            </tr>
+
+            <tr>
+                <td><label for="p_password">password</label></td>
+                <td><input type="text" name="p_password" id="p_password" repuired placeholder="Şifrenizi yazınız..." ></td>
+            </tr>
+
+            <tr>
+                <td><button type="reset">Temizle</button></td>
+                <td><button type="submit">Gönder</button></td>
+            </tr>
+
+            <tr>
+                <td><label for="Username">Dersler</label ></td>
+                <td>
+                    <input type="checkbox"> Javase 
+                    <input type="checkbox"> Javame
+
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Username">Cinsiyet</label></td>
+                <td>
+                    <!--eğer ki kadın ve erkek için de name;="gender" koyarsan yanlızca birini seçmeye izin verirsin-->
+                    <input type="radio" name="gender"> ERKEK
+                    <input type="radio" name="gender"> KADIN 
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <hr>
+    <div>
+        <label for="p_Username">Username</label>
+        <input type="text" name="p_username" id="p_username" repuired placeholder="Adınızı yazınız..." >
+    </div>
+    <div>
+        <label for="p_email">email</label>
+        <input type="text" name="p_email" id="p_email" repuired placeholder="Email yazınız..." >
+    </div>
+    <div>
+        <label for="p_password">password</label>
+        <input type="text" name="p_password" id="p_password" repuired placeholder="Şifrenizi yazınız..." >
+    </div>
+    <div>
+        <button type="reset">Temizle</button>
+        <button type="submit">Gönder</button>
+    </div>
+</form>
+<br>
+<hr>
+    <p>---favicon----</p>
+    <link rel="icon" href="https://lavinya.net/wp-content/uploads/2022/10/5b9895-manzara-landscape-1280x862.jpeg.webp">
+    <br>
+    <hr>
+    <p>-----map-----</p>
+    <!--https://www.maps.ie/create-google-map/-->
+    <div style="width:100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" margenheight="0" marginwith="0"
+        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><- href="https://www.maps.ie/population/">Population Estimator map</a></iframe></div>
+        <br>
+        <hr>
+    <p>----ses----</p>
+    <!--https://www.w3schools.com/html/html5_video.asp----> 
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+         
+    </audio>   
+    <br>
+    <br>
+    <hr>
+    <!--irfame: site içerisine başka bir web sitesi eklemek-->
+    <iframe src="https://www.ecodation.com" height="200" title="irfame Example"></iframe>
+    <br>
+    <hr>
+    <p>--video--</p>
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+    <br>
+    <hr>
+    <!-- table>thead>tr>th{item$}*3^^tbody>tr>td{item$}*3^^tfoot>tr>th{item$}*3-->
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>SN</th>
+                <th>FRONTEND</th>
+                <th>BACKEND</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>HTML5</td>
+                <td>Javase</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>css3</td>
+                <td>Javame</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>javascript</td>
+                <td>Javaee</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>bootstrap</td>
+                <td>nodeJS</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">&copy;Bütün Haklar Saklıdır</th>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <hr>
+    <p>--link--</p>
+    <a href="http://www.ecodation.com" target="_blank">ecodation</a>
+    <img src="https://images.pexels.com/photos/3617500/pexels-photo-3617500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="isn't image">
+
+    <a href="http://www.ecodation.com" target="_blank">
+        <img src="https://images.pexels.com/photos/3617500/pexels-photo-3617500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="isn't image">
+    </a>
+    <br>
+    <hr>
+    <p>---liste---</p>
+    <!-- ul>li{item$}*4 -->
+    <!-- ul: unordered list-->
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+    <ol start="2" type="I">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ol>
+    <br>
+    <hr>
+    <br>
+    <label for="java">Bildiğiniz teknoloji</label><br>
+    multiple: çoklu seçim <br>
+    diabled: seçmeyi kapatmak <br>
+    <select name="java" id="java" multiple>
+        <option value="o">Seçiniz</option>
+        <option value="1">Javase</option>
+        <option value="2">Javame</option>
+        <option value="3">Javaee</option>
+    </select>
+    <br>
+    <hr>
+    <br>
+
+    <p>----Formatter-----</p>
+
+    <b>bold</b><br>
+    <i>italic</i><br>
+    <small>small</small><br>
+    <big>big</big><br>
+    <strong>strong</strong><br>
+    <code>code</code><br>
+    <del>üstünü çizmek</del><br>
+    <ins>altını çizmek</ins><br>
+    <u>altını çizmek</u><br>
+    <mark>fosforlu kalem</mark><br>
+    <em>vurgulamak</em><br>
+    10<sup>4</sup><br>
+    log<sub>2</sub>5<br>
+    DİKKAT: html formatter yapılarını iç içe yazabilirisn <br>
+    <mark>
+        <b>
+            <i>
+                <ins> içe içe formatter</ins>
+            </i>
+        </b>
+    </mark>
+    <!-- alıntı lorem*(istediğin satır sayısı)-->
+    <p><q>Alıntı Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt minus atque delectus veniam totam perspiciatis veritatis quod harum numquam sequi repellendus iste expedita, consequatur doloremque nihil accusamus cupiditate ab quos.</q></p>
+     <br>
+     <hr>
+    
+    <span>Aynı satırda devam etmek</span> 
+    <span>Aynı satırda devam etmek</span> 
+    <div>Alt satırda devam etmek</div>
+    <div>Alt satırda devam etmek</div>
+    <br>
+    <hr>
+
+    <p>----heading----</p>
+    <br> <!--boşluk-->
+    <hr> <!--çizgi-->
+    <!-- h${Heading $}*6 -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <h1></h1>
+    
+
+    <footer>
+        Copyright © 2020 by <NAME>. All Rights Rezerved. <br>
+    </footer>
+    <!-- end codes -->
+    
+
+
+</pre>
+
+    
+</body>
+</html>

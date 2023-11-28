@@ -1,0 +1,175 @@
+/* burası yorum (command k ve c  )*/
+
+*{
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* #header_id{}
+   .header_class{}  (headera ulaşmak için kullanılabilir seçenekler) */
+header{
+  position: relative; /* bodynin içinde kalır*/
+  /* height:200px; */
+  height: 75vh;
+}
+header ::before{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0;
+  left: 0
+  content "";
+  background-image: url('\https://images.pexels.com/photos/17906701/pexels-photo-17906701/free-photo-of-gida-soguk-alginligi-su-alkol.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-position: center; /* ortalama*/
+  background-size: cover; /*tam ekran*/
+  width: 100%;
+}
+
+#nevbar_id{
+    list-style-type: none; /* baştaki noktaları kaldırır*/
+    /*position: ; fixed ve sticky ekranda sabit göstermek için kullanılır */
+    position: fixed;
+    top: 0;
+    /* z-index: 1;  üste çıkarmak için kullanılır*/
+    z-index: 1;
+}
+ #nevbar_id li {
+    display: inline-block;
+    border: 1px solid rgb(255, 57, 149);
+    background-color: rgb(255, 218, 247);
+    color: rgb(255, 0, 119);
+    padding: 5px;
+    border-radius: 15%; /*yanlarını yuvarlar*/
+    text-transform: uppercase;
+    transition: 2s ease-in-out;
+    opacity: 0.8;
+  }
+  ul li:hover {
+    background-color: aliceblue;
+    color: #0df;
+    cursor: pointer;
+    transition: 2s all;
+    box-shadow: 1px 1px 3px 1px rgb(233, 41, 192);
+    transform: rotate(360deg);
+   }  
+
+   .div_class{
+    background-color: #ff00a2;
+    min-height: 50px;
+    margin-bottom: 5px;
+    display: inline-block;
+    float: left;
+   }
+   img{
+    min-height: 100px;
+    width: 100%;
+    display: inline-block;
+   }
+
+   @media screen and (min-width:1px){
+    img{
+      width: 100%;
+
+    }
+   }
+
+   @media  screen and (min-width:600px) {
+    img{
+      width: 49%;
+    }
+   }
+
+   @media  screen and (min-width:900px) {
+    img{
+      width: 32%;
+    }
+   }
+
+   @media  screen and (min-width:1200px) {
+    img{
+      width: 24%;
+    }
+   }
+
+   /* img{
+    width: 100%;
+    height: auto;
+  }
+  img :hover{
+    opacity: 0.6;
+    transition: 2s all;
+  } */
+ 
+p{
+    color: rgb(253, 127, 255);
+    color: #0df;
+    color: #0cae23; /*burda ilk 2 red sonra 2 green 2 blue*/
+    color: rgb(255, 57, 149);
+
+
+    background-color: rgb(255, 218, 247);
+
+
+    /* margin:dış boşluk demek */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin: 10px;
+    margin: 10px 10px 10px 10px;
+    margin: 10px 10px; 
+    /*hepsini yapar sağ sol üst alt*/
+
+
+    /* padding:iç boşluk demek */
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding: 10px; ;/*hepsini yapar sağ sol üst alt*/
+    padding: 10px 10px 10px 10px; /*hepsini yapar sağ sol üst alt*/
+    padding: 10px 10px ; /*hepsini yapar sağ sol üst alt*/
+
+    /* border: çerçeve demek */
+    border: 10px solid rgb(255, 0, 119);
+
+
+    /* cursos: kullanıcıya metin üzerinde gezinme hakkı verir */
+    cursor: pointer; 
+
+
+    /* text-align: center; -> ortada left,right -> sola veya sağa yassı justify -> sağa ve sola yassı */
+    text-align: justify;
+
+    /*text-decoration: overline, underline -> üst , altı çizili dotted -> .... devam eder line-through -> üzerini çizer ;*/
+    text-decoration: underline;
+
+    
+    text-shadow: 0.4px 0.1px pink ; /* text-shadow: x düzlemi, y düzlemi, renk; gölgelendirme  */
+    text-indent: 10%; /* sola girinti bırakmak*/
+    text-transform: capitalize; /* burda büyük ve küçük harf için kullanılır*/
+    word-spacing: 5px; /* kelimeler arası boşluk */
+    letter-spacing: 1px; /* harfler arasındaki boşluk */
+    line-height: 30px; /* satırlar arası boşluk */
+
+    font-size: 20px; /* yazı fontu belirleme */ 
+    font-weight: 700; /* kalınlık verme */
+    font-style: italic; /* yazı tipi */
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+footer{
+  background-color: #3d3d3d;
+  color: white;
+  text-align: center;
+  width: auto;
+  height: 50px;
+  height: 10vh;
+  height: 5rem;  /*bunlar da ayni sey icin kullanilir*/
+  min-height: 5rem; /*max ve min yukseklik*/
+  padding: 20px auto;
+
+}

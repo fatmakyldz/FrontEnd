@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <noscript>Bu browser javascript'i desteklemiyor.</noscript>
+    <br><br><br><br>
+    
+<div class="container">
+    <h1 class="display-4 text-center text-uppercase">Register</h1>
+    <form action="#" method="get">
+        <div class="form-group">
+            <input 
+            type="text" 
+            id="name_id" 
+            class="form-control mb-2" 
+            placeholder="Adınızı giriniz" 
+            required="true"
+            autofocus 
+            title="Adınızı giriniz." 
+            />
+        </div>
+        <div class="form-group">
+            <input 
+            type="text" 
+            id="surname_id" 
+            class="form-control mb-2" 
+            placeholder="Soyadınızı giriniz" 
+            required
+            title="Soyadınız giriniz."
+            />
+        </div>
+        <button type="reset" class="btn btn-danger">Temizle</button>
+        <button type="submit" onclick="loginButton()" class="btn btn-primary">Giriş Yap</button>
+    </form>
+</div>
+    
+    
+    
+    <!-- <hr>
+    <p id="paragId">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, ab!</p>
+    <button class="btn btn-primary" onclick="dom()">click me !</button>
+    <hr>
+    <script>
+        const dom = () =>{
+   // alert("tıklandı");
+    document.getElementById("paragId").innerHTML="değişti";
+    document.querySelector("#paragId").innerHTML = "<b>değişti</b>";
+    document.querySelector("#paragId").innerText = "<b>değişti</b>";
+    document.querySelector("#paragId").style.color = "blue";
+    document.querySelector("#paragId").style.backgroundColor = "black";
+    document.querySelector("#paragId").style.padding = "3rem";
+    document.querySelector("#paragId").style.marginTop= "1rem";
+
+
+}
+dom();
+    </script>
+
+    <hr> -->
+    <!--<button class="btn btn-primary" onclick="deneme1()">onclick</button> --><!--bir kere tiklamak -->
+    <!--<button class="btn btn-primary" ondblclick="deneme1()">ondblclick</button> --> <!--iki kere tiklamak -->
+    <!--<br><br>
+    <button class="btn btn-primary" onmousewheel=" deneme1()">onmousewheel</button>--> <!--mause ileri geri tiklarsan calisir-->
+    <!--<button class="btn btn-primary" onmousedown="deneme1()">onmousedown</button>--> <!--mause a tiklar tiklamaz-->
+    <!--<button class="btn btn-primary" onmouseup="deneme1()">onmouseup</button> --><!--mausea tikladiktan sonra elimi kaldirinca-->
+    <!--<br><br>
+    <button class="btn btn-danger" onkeydown="deneme1()">onkeydown</button> --><!--klavyeden tusa basinca-->
+    <!--<button class="btn btn-danger" onkeyup="deneme1()">onkeyup</button>--><!--tustan elimi kaldirinca -->
+    <!--<hr>
+    <button class="btn btn-primary" onclick="isOtherRedirectPage()">isOtherRedirectPage</button> --><!--baska sayfaya gitmek-->
+    <hr>
+
+
+
+    <!--<script>
+        alert(pop-up-1);
+        alert(pop-up-2);
+    </script> -->                                                                                                                                       
+    <!-- <br><br>
+    <hr>
+    <nav class="navbar navbar-expand-md navbar-primary bg-primary fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+      </div>
+    </nav>
+    <br>
+    
+    <br>
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="../img/pexels-photo-7335629.jpeg" class="w-100 d-block" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/9240f0978a670225912de4939b738357.jpg" class="w-100 d-block" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/9e62154c7b9c37f63662ccbb69b5e65a.jpg" class="w-100 d-block" alt="Third slide">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br>
+    <!-- Modal trigger button -->
+    <!-- <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+      Login
+    </button> -->
+    
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <!-- <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#!" method="post" target="_blank">
+                        <div class="container">
+                            <div class="row">
+                                <h3 class="display-3 fw-bold text-center text-uppercase">{Login}</h3>
+                                <div class="col-1"></div>
+                                <div class="col">
+                                    <div class="d-grid gap-4">
+                                        <div class="form-group">
+                                            <label for="email_id" class="text-muted">EMAİL</label>
+                                            <input 
+                                            type="email" 
+                                            id="email_id" 
+                                            name="email_name" 
+                                            class="form-control"
+                                            placeholder="Email adresiniz" 
+                                            title="email alanı" 
+                                            required 
+                                            autofocus>
+                                        </div>
+                
+                                        <div class="form-group mb-3">
+                                            <label for="password_id" class="text-muted">PASSWORD</label>
+                                            <input type="password" id="password_id" name="password_name"
+                                                                class="form-control" placeholder="password"
+                                                                title="Şifre Alanı" required>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <input type="reset" value="Temizle" class="btn btn-danger">
+                                                        <button class="btn btn-primary">Gönder</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-1"></div>
+                                            </div>
+                                        </div>
+                
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    
+     
+    <!-- Optional: Place to the bottom of scripts -->
+    <!-- <script>
+        const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+    
+    </script> -->
+
+  
+    
+    <!-- <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    </div>
+     <hr>
+    <button type="button" class="btn btn-primary" data-bs-toggle="button" aria-pressed="false" autocomplete="off">MENU</button>
+    <hr>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#Id2" aria-controls="Id2">
+        Toggle static offcanvas
+      </button>
+      <hr>
+      
+      <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="Id2" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        
+        <div class="offcanvas-body">
+          <div>
+            I will not close if you click outside of me.
+          </div>
+        </div>
+      </div>
+      
+      <span class="badge bg-secondary"></span>
+          
+    <hr>
+    <br><br>
+    <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#contentId" aria-expanded="false"
+            aria-controls="contentId">
+            Show
+        </a>
+    </p>
+    <div class="collapse" id="contentId">
+    </div>
+
+    <hr>
+    <div class="card">
+        <img class="card-img-top" src="../img/9240f0978a670225912de4939b738357.jpg" alt="Title">
+        <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Text</p>
+        </div>
+    </div>
+    <hr>
+
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+        title="Tooltip Content">
+        data
+    </button>
+    <hr>
+    <form action="#!" method="post" target="_blank">
+        <div class="container">
+            <div class="row">
+                <h3 class="display-3 fw-bold text-center text-uppercase">{Login}</h3>
+                <div class="col-1"></div>
+                <div class="col">
+                    <div class="d-grid gap-4">
+                        <div class="form-group">
+                            <label for="email_id" class="text-muted">EMAİL</label>
+                            <input 
+                            type="email" 
+                            id="email_id" 
+                            name="email_name" 
+                            class="form-control"
+                            placeholder="Email adresiniz" 
+                            title="email alanı" 
+                            required 
+                            autofocus>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="password_id" class="text-muted">PASSWORD</label>
+                            <input type="password" id="password_id" name="password_name"
+                                                class="form-control" placeholder="password"
+                                                title="Şifre Alanı" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="reset" value="Temizle" class="btn btn-danger">
+                                        <button class="btn btn-primary">Gönder</button>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                        </div>
+
+    </form>
+    <hr>
+    <table class="table table-hover table-striped table-dark table-sm table-bordered ">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Heading1</th>
+                <th>Heading2</th>
+                <th>Heading3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ID</td>
+                <td>Kelime-1</td>
+                <td>Kelime-2</td>
+                <td>Kelime-3</td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>Kelime-1</td>
+                <td>Kelime-2</td>
+                <td>Kelime-3</td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>Kelime-1</td>
+                <td>Kelime-2</td>
+                <td>Kelime-3</td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>Kelime-1</td>
+                <td>Kelime-2</td>
+                <td>Kelime-3</td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>Kelime-1</td>
+                <td>Kelime-2</td>
+                <td>Kelime-3</td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>Kelime-1</td>
+                <td>Kelime-2</td>
+                <td>Kelime-3</td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>Kelime-1</td>
+                <td>Kelime-2</td>
+                <td>Kelime-3</td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>Kelime-1</td>
+                <td>Kelime-2</td>
+                <td>Kelime-3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="text-center bg-warning text-dark" colspan="4">&copy; BUTUN HAKLAR SAKLIDIR</th>
+            </tr>
+        </tfoot>
+    </table> -->
+    <!-- colspan: tablonun altina oturtmak icin kullanilir -->
+
+<!-- 
+    <hr>
+    <ul class="list-group d-garid gap-3">
+        <li class="list-group-item">item1</li>
+        <li class="list-group-item bg-dark text-white">item2</li>
+        <li class="list-group-item">item3</li>
+        <li class="list-group-item">item4</li>
+        <li class="list-group-item">item5</li>
+    </ul>
+
+   <hr>
+    <div class="alert alert-primary">
+        <span>MERHABALAR NABER?</span>
+    </div>
+    <div class="alert alert-danger">
+        <span>MERHABALAR NABER?</span>
+    </div>
+    <div class="alert alert-success">
+        <span>MERHABALAR NABER?</span>
+    </div>
+    <div class="alert alert-warning">
+        <span>MERHABALAR NABER?</span>
+    </div> -->
+     <!-- alertdismissible:kapatilabilir uyari -->
+    <!-- <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    </div>
+    
+    <hr>
+    <div class="bg-dark text-white p-3 m-2 border-3 shadow-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quam quis facilis minus beatae minima deleniti, possimus temporibus nobis laborum doloribus natus et odio? Natus ipsa hic veniam repellat sunt.
+    Dolores repellat dolorum cupiditate ut iste sit! Officiis neque illum natus delectus fuga minus, asperiores ratione sed cupiditate commodi hic totam voluptas rem itaque nihil unde ab tenetur. Porro, quis?</div>
+    <hr>
+    <img src="../img/9e62154c7b9c37f63662ccbb69b5e65a.jpg" alt="" class="img-fluid w-25 float-end">
+    <img src="../img/pexels-photo-7335629.jpeg" alt="" class="img-fluid w-25 float-start me-5">
+    <img src="../img/desktop-wallpaper-barbie-pink-barbie-pattern.jpg" alt="" class="img-fluid w-25 ">
+    <br><br><br><br><br>
+    <hr> -->
+    <!-- img-fluid: sayfaya tam oturtur img-thumbnail: cerceve yapar -->
+    <!-- <img src="../img/9240f0978a670225912de4939b738357.jpg" class="img-fluid img-thumbnail rounded-circle">
+    <hr>
+    <div style="height: 100px;">
+        <div class="h-25 bg-dark text-white mb-2">Height %25</div>
+        <div class="h-50 bg-dark text-white mb-2">Height %50</div>
+        <div class="h-75 bg-dark text-white mb-2">Height %75</div>
+        <div class="h-100 bg-dark text-white">Height %100</div>
+    </div>
+    <br><br><br><br><br><br><br>
+    
+    <hr> -->
+    <!-- w- : width bg-: arka plan -->
+    <!-- <div class="bg-primary text-white w-25 mb-1">Width %25</div>
+    <div class="bg-primary text-white w-50 mb-1">Width %50</div>
+    <div class="bg-primary text-white w-75 mb-1">Width %75</div>
+    <div class="bg-primary text-white w-100 mb-1">Width %100</div>
+    <hr> -->
+
+ <!-- (div.d-grid.gap-2.col-6.mx-auto>) mx-auto:sagdan ve soldan ortalamak col- btron genisligi gap- butonlar arasi bosluk -->
+    <!-- <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-outline-primary">BUTTON-1</button>
+        <button class="btn btn-danger">BUTTON-2</button>
+        <button class="btn btn-warning">BUTTON-3</button>
+    </div>
+    <hr>
+    <button class="btn btn-outline-primary">BUTTON-1</button>
+    <button class="btn btn-outline-secondary">BUTTON-2</button>
+    <button class="btn btn-outline-danger">BUTTON-3</button>
+    <button class="btn btn-outline-success">BUTTON-4</button>
+    <button class="btn btn-outline-warning">BUTTON-5</button>
+    <button class="btn btn-outline-info">BUTTON-6</button>
+    <hr>
+    <hr>
+    <button class="btn btn-primary">BUTTON-1</button>
+    <button class="btn btn-secondary disabled">BUTTON-2</button> --> <!--disabled tiklanamz-->
+    <!-- <button class="btn btn-secondary">button-1</button>
+    <button class="btn btn-danger">button-1</button>
+    <button class="btn btn-warning btn-sm">button-1</button>
+    <button class="btn btn-success btn-md">button-1</button>
+    <button class="btn btn-info btn-lg">button-1</button>
+    <button class="btn btn-info btn-lg active">button-1</button>
+    <hr> -->
+    <!-- lead:buyutmek text:anahtar sozcuk cok seye erisim var/ fw: fontwidth fst:fontstyletype -->
+    <!-- <p class="lead text-success text-capitalize text-center fw-bold fst-italic"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+
+    <hr> -->
+    <!--bg: arka plan rengi - text-primary text-second texs- success text-denger text-info text-dar (renk paletleri)-->
+    <!-- m-4 mt-4 me-4(sag) mb-4 ms-4(sol) mx-auto my-4  -->
+    <!-- p padding demek ic bosluk -->
+    <!-- rounded bogum yapmak koselerden rounded-top: sadece yukardan rounded-bottom: alttan -->
+    <!-- <p class="text-primary bg-dark m-4 p-2 rounded-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
+    
+
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 border border-primary" >SOL TARAF</div>
+            <div class="col-8 border border-primary">SAĞ TARAF Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur delectus itaque corrupti, voluptatem similique doloremque est, </div>
+        </div>
+    </div>
+
+    <hr> -->
+    <!-- p.h${H$}86 -->
+    <!-- <p class="h1">H1</p>
+    <p class="h2">H2</p>
+    <p class="h3">H3</p>
+    <p class="h4">H4</p>
+    <p class="h5">H5</p>
+    <p class="h6">H6</p>
+    <hr> -->
+    <!-- p.display-${display-$}*6 -->
+    <!-- <p class="display-1">display-1</p>
+    <p class="display-2">display-2</p>
+    <p class="display-3">display-3</p>
+    <p class="display-4">display-4</p>
+    <p class="display-5">display-5</p>
+    <p class="display-6">display-6</p>
+    <hr> -->
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="./tamplate.js"></script>
+</body>
+
+</html>
